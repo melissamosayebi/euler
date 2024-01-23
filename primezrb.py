@@ -8,18 +8,13 @@ def prime(x):
             is_prime=True
     return is_prime
 a=600851475143 
-i=8462696834
-while i>2:
+i=3
+while i<100000000:
     if a%i==0:
-        print(i)
-        if prime(i):
-            #print(i)
-            s=i
-            print(s)
-            break 
-            #print(f"c is {count}")
-        i-=1000000000
-    i-=1
-#print(s) 
-#600851475143   
-#10000000000    
+        f=a/i
+        f=int(f)
+        if prime(f):
+            print(f)
+            break
+    i+=1 
+
