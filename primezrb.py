@@ -9,12 +9,11 @@ def prime(x):
     return is_prime
 a=600851475143 
 i=3
-while i<100000000:
+while True:
     if a%i==0:
         f=a/i
         f=int(f)
         if prime(f):
             print(f)
             break
-    i+=1 
-
+    i+=1
