@@ -1,3 +1,5 @@
+import time
+start=time.time()
 def prime(x):
     is_prime=True
     for i in range(2,int(x**0.5)+1):
@@ -8,12 +10,17 @@ def prime(x):
             is_prime=True
     return is_prime
 a=600851475143 
-i=3
+i=71
+j=0
+lst=[]
 while True:
     if a%i==0:
-        f=a/i
-        f=int(f)
-        if prime(f):
-            print(f)
+        f=a//i
+        lst.append(f)
+        #print(lst)
+        if prime(lst[j]):
+            print(lst[j])
             break
+        j+=1
     i+=1
+print("Run Time: " + str( time.time() - start ))
