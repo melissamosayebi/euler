@@ -1,0 +1,9 @@
+def bakhs(x):
+    i=3
+    while i<100000000:
+        if x%i==0:
+            #print(i)
+            break
+        i+=1
+    return i
+print(bakhs(600851475143))
