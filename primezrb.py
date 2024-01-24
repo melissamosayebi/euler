@@ -10,17 +10,13 @@ def prime(x):
             is_prime=True
     return is_prime
 a=600851475143 
-i=71
-j=0
-lst=[]
+i=3
 while True:
     if a%i==0:
         f=a//i
-        lst.append(f)
         #print(lst)
-        if prime(lst[j]):
-            print(lst[j])
+        if prime(f):
+            print(f)
             break
-        j+=1
     i+=1
 print("Run Time: " + str( time.time() - start ))
